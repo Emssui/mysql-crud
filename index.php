@@ -147,7 +147,7 @@
                 xhr.onreadystatechange = function() {
                     if (xhr.readyState === XMLHttpRequest.DONE && xhr.status === 200) {
                         alert('Member deleted successfully!');
-                        location.reload(); // Reload the page to see the changes
+                        location.reload();
                     }
                 };
                 xhr.send("delete=1&id=" + id);
